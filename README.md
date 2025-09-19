@@ -114,4 +114,5 @@ Este projeto foi desenvolvido e é mantido por:
 * **Danilo** - [GitHub: @danilinhotj187](https://github.com/danilinhotj187)
 * **Antonio** - [GitHub: @Antoniojferreira3](https://github.com/Antoniojferreira3)
 * **Pedro** - [GitHub: @pedroH901](https://github.com/pedroH901)
+* **David** - [GitHub: @davidmassari](https://github.com/davidmassari)
 
