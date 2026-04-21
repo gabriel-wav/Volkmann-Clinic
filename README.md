@@ -1,118 +1,117 @@
-# 🦴 Projeto Site - Clínica Volkmann
+# 🦴 Project Website - Volkmann Clinic
 
-Este repositório contém o código-fonte de um site estático para a "Clínica Volkmann", um centro ortopédico fictício. O projeto foi desenvolvido como uma aplicação front-end pura, utilizando HTML, CSS e JavaScript para criar uma experiência de usuário interativa e informativa.
+This repository contains the source code for a static website for "Volkmann Clinic", a fictional orthopedic center. The project was developed as a pure front-end application, using HTML, CSS and JavaScript to create an interactive and informative user experience.
 
-**[Acessar a demonstração ao vivo (via GitHub Pages)](https://gabriel-wav.github.io/ClinicaVolkmann/index.html)**
-
----
-
-## 📋 Índice
-
-* [Visão Geral](#-visão-geral)
-* [Funcionalidades Principais](#-funcionalidades-principais)
-* [Arquitetura e Tecnologias](#%EF%B8%8F-arquitetura-e-tecnologias)
-* [Estrutura do Projeto](#-estrutura-do-projeto)
-* [Como Executar o Projeto](#-como-executar-o-projeto)
-* [Autores](#-autores)
+**[Access the live demo (via GitHub Pages)](https://gabriel-wav.github.io/ClinicaVolkmann/index.html)**
 
 ---
 
-## 🖼 Visão Geral
+## 📋 Table of Contents
 
-O site da Clínica Volkmann serve como um portal informativo e de interação para pacientes. Ele foi projetado a partir de um protótipo no Figma e implementado com foco em uma estrutura modular e estilização individualizada para cada seção, apresentando as especialidades da clínica, seu corpo médico e permitindo que os usuários se cadastrem e agendem consultas.
-
----
-
-## ✨ Funcionalidades Principais
-
-O site é composto por diversas páginas, cada uma com um propósito específico:
-
-* **Página Inicial (`index.html`):** Apresenta a clínica, com atalhos para as principais especialidades e um chamado para agendamento de consultas.
-* **Quem Somos (`quemsomos.html`):** Detalha a história, missão, visão e valores da clínica.
-* **Especialidades (`especialidades.html`):** Exibe os diferentes tratamentos ortopédicos oferecidos.
-* **Saiba Mais (`saiba-mais.html`):** Página de detalhamento para cada especialidade, explicando os tratamentos e profissionais responsáveis.
-* **Corpo Médico (`corpomedico.html`):** Apresenta os perfis dos médicos da equipe com descrições interativas.
-* **Cadastro e Login (`cadastro.html`, `login.html`):** Formulários para que novos pacientes possam se cadastrar e usuários existentes possam acessar sua área.
-* **Agendamento de Consultas (`consultas.html`):** Formulário para marcar consultas.
-* **Política de Privacidade (`politica.html`):** Informações sobre o uso de dados dos usuários.
+* [Overview](#-overview)
+* [Key Features](#-key-features)
+* [Architecture & Technologies](#️-architecture--technologies)
+* [Project Structure](#-project-structure)
+* [How to Run the Project](#-how-to-run-the-project)
+* [Authors](#-authors)
 
 ---
 
-## 🛠️ Arquitetura e Tecnologias
+## 🖼 Overview
 
-O projeto é construído exclusivamente com tecnologias front-end e não requer um back-end para funcionar.
-
-* **Tecnologias Utilizadas:**
-    * **HTML5:** Para a estruturação semântica do conteúdo.
-    * **CSS3:** Para a estilização, com folhas de estilo separadas para cada página, permitindo um design customizado por seção.
-    * **JavaScript (ES6):** Utilizado para interatividade e modularização.
-    * **Figma:** O design visual do projeto foi prototipado na plataforma.
-
-* **Arquitetura Modular:**
-    Uma característica notável da arquitetura é a **modularização do cabeçalho e rodapé**. Em vez de repetir o código em cada arquivo HTML, os componentes `header.html` e `footer.html` são carregados dinamicamente em todas as páginas usando a API `fetch()` do JavaScript (`header.js`, `footer.js`). Isso centraliza a manutenção e garante consistência visual em todo o site.
+The Volkmann Clinic website serves as an informational and interactive portal for patients. It was designed from a Figma prototype and implemented with a focus on a modular structure and individualized styling for each section, presenting the clinic's specialties, its medical staff, and allowing users to register and schedule appointments.
 
 ---
 
-## 📁 Estrutura do Projeto
+## ✨ Key Features
 
-A estrutura de arquivos do repositório está organizada da seguinte maneira:
+The website is composed of several pages, each with a specific purpose:
 
-* **Páginas Principais (`.html`)**
-    * `index.html` (Página inicial do site)
-    * `quemsomos.html` (Seção sobre a clínica)
-    * `especialidades.html` (Lista as áreas de atuação)
-    * `saiba-mais.html` (Detalhes sobre cada especialidade)
-    * `corpomedico.html` (Apresenta os profissionais)
-    * `consultas.html` (Formulário para agendamento)
-    * `cadastro.html` (Formulário de cadastro de paciente)
-    * `login.html` (Página de login)
-    * `politica.html` (Política de privacidade)
+* **Home Page (`index.html`):** Introduces the clinic, with shortcuts to the main specialties and a call-to-action for scheduling appointments.
+* **About Us (`quemsomos.html`):** Details the clinic's history, mission, vision, and values.
+* **Specialties (`especialidades.html`):** Displays the different orthopedic treatments offered.
+* **Learn More (`saiba-mais.html`):** A detail page for each specialty, explaining the treatments and the responsible professionals.
+* **Medical Staff (`corpomedico.html`):** Presents the profiles of the team's doctors with interactive descriptions.
+* **Registration & Login (`cadastro.html`, `login.html`):** Forms for new patients to register and existing users to access their area.
+* **Appointment Scheduling (`consultas.html`):** A form to book appointments.
+* **Privacy Policy (`politica.html`):** Information about user data usage.
 
-* **Componentes Reutilizáveis (`.html`)**
-    * `header.html` (O cabeçalho, injetado em todas as páginas)
-    * `footer.html` (O rodapé, injetado em todas as páginas)
+---
 
-* **Folhas de Estilo (`.css`)**
-    * `style.css` (Estilos globais aplicados a todo o site)
-    * Arquivos como `login.css`, `quemsomos.css`, etc. (Estilos específicos para cada página)
+## 🛠️ Architecture & Technologies
+
+The project is built exclusively with front-end technologies and does not require a back-end to run.
+
+* **Technologies Used:**
+    * **HTML5:** For the semantic structuring of content.
+    * **CSS3:** For styling, with separate stylesheets for each page, allowing a customized design per section.
+    * **JavaScript (ES6):** Used for interactivity and modularization.
+    * **Figma:** The visual design of the project was prototyped on the platform.
+
+* **Modular Architecture:**
+    A notable characteristic of the architecture is the **modularization of the header and footer**. Instead of repeating the code in every HTML file, the `header.html` and `footer.html` components are dynamically loaded on all pages using the JavaScript `fetch()` API (`header.js`, `footer.js`). This centralizes maintenance and ensures visual consistency throughout the site.
+
+---
+
+## 📁 Project Structure
+
+The repository's file structure is organized as follows:
+
+* **Main Pages (`.html`)**
+    * `index.html` (Site home page)
+    * `quemsomos.html` (About the clinic section)
+    * `especialidades.html` (Lists the areas of expertise)
+    * `saiba-mais.html` (Details about each specialty)
+    * `corpomedico.html` (Presents the professionals)
+    * `consultas.html` (Appointment scheduling form)
+    * `cadastro.html` (Patient registration form)
+    * `login.html` (Login page)
+    * `politica.html` (Privacy policy)
+
+* **Reusable Components (`.html`)**
+    * `header.html` (The header, injected into all pages)
+    * `footer.html` (The footer, injected into all pages)
+
+* **Stylesheets (`.css`)**
+    * `style.css` (Global styles applied to the entire site)
+    * Files such as `login.css`, `quemsomos.css`, etc. (Page-specific styles)
 
 * **Scripts (`.js`)**
-    * `header.js` (Lógica para carregar o cabeçalho em todas as páginas)
-    * `footer.js` (Lógica para carregar o rodapé em todas as páginas)
+    * `header.js` (Logic to load the header on all pages)
+    * `footer.js` (Logic to load the footer on all pages)
 
-* **Recursos e Configurações**
-    * `imagens/` (Pasta que contém todos os logos, fotos de médicos e ícones)
-    * `figma.html` (Arquivo com o link para o protótipo visual no Figma)
-    * `settings.json` (Configuração do ambiente de desenvolvimento no VS Code)
+* **Resources & Configuration**
+    * `imagens/` (Folder containing all logos, doctor photos, and icons)
+    * `figma.html` (File with the link to the visual prototype on Figma)
+    * `settings.json` (Development environment configuration for VS Code)
 
 ---
 
-## 🚀 Como Executar o Projeto
+## 🚀 How to Run the Project
 
-Como este é um projeto front-end estático, não há necessidade de um processo de build ou de instalação de dependências complexas.
+Since this is a static front-end project, there is no need for a build process or complex dependency installation.
 
-1.  **Clone o Repositório:**
+1.  **Clone the Repository:**
     ```bash
     git clone [https://github.com/gabriel-wav/ClinicaVolkmann.git](https://github.com/gabriel-wav/ClinicaVolkmann.git)
     ```
 
-2.  **Abra o Projeto:**
-    * Navegue até a pasta do projeto clonado.
-    * Abra o arquivo `index.html` diretamente em qualquer navegador web.
+2.  **Open the Project:**
+    * Navigate to the cloned project folder.
+    * Open the `index.html` file directly in any web browser.
 
-3.  **Usando o Live Server (Recomendado):**
-    * Se você utiliza o Visual Studio Code, é recomendado usar a extensão **Live Server**.
-    * O projeto já contém uma configuração (`settings.json`) para o Live Server. Basta clicar no botão `Go Live` no canto inferior direito do VS Code para iniciar um servidor de desenvolvimento local.
+3.  **Using Live Server (Recommended):**
+    * If you use Visual Studio Code, it is recommended to use the **Live Server** extension.
+    * The project already includes a configuration (`settings.json`) for Live Server. Simply click the `Go Live` button in the bottom-right corner of VS Code to start a local development server.
 
 ---
 
-## 👨‍💻 Autores
+## 👨‍💻 Authors
 
-Este projeto foi desenvolvido e é mantido por:
+This project was developed and is maintained by:
 
 * **Gabriel** - [GitHub: @gabriel-wav](https://github.com/gabriel-wav)
 * **Danilo** - [GitHub: @danilinhotj187](https://github.com/danilinhotj187)
 * **Antonio** - [GitHub: @Antoniojferreira3](https://github.com/Antoniojferreira3)
 * **Pedro** - [GitHub: @pedroH901](https://github.com/pedroH901)
 * **David** - [GitHub: @davidmassari](https://github.com/davidmassari)
-
