@@ -1,6 +1,6 @@
 // Função moderna para injeção de componentes garantindo compatibilidade e acessibilidade
 document.addEventListener("DOMContentLoaded", () => {
-    fetch('header.html')
+    fetch('components/header.html')
         .then(response => {
             if (!response.ok) throw new Error('Falha ao carregar o header');
             return response.text();

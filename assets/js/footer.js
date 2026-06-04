@@ -1,6 +1,6 @@
 // Função moderna para injeção de componentes garantindo compatibilidade e acessibilidade
 document.addEventListener("DOMContentLoaded", () => {
-    fetch('footer.html')
+    fetch('components/footer.html')
         .then(response => {
             if (!response.ok) throw new Error('Falha ao carregar o footer');
             return response.text();
