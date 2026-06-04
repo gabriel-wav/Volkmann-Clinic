@@ -1,2 +1,72 @@
-projeto figma
-https://www.figma.com/design/YoZtO66O8PLXoTmb0g3fdU/Projeto-Centro-Ortop%C3%A9dico-Volkmann?node-id=0-1&node-type=canvas&t=gV36zhxQTcHfbi3T-0
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="header.js" defer></script>
+    <script src="footer.js" defer></script>
+    <link rel="stylesheet" href="geral.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Protótipo Figma - Clinica Volkmann</title>
+    <style>
+        .figma-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 4rem 1rem;
+            background-color: var(--cor-fundo);
+            min-height: calc(100vh - 200px);
+        }
+        
+        .figma-container h1 {
+            font-family: var(--fonte-principal);
+            font-size: clamp(2rem, 4vw, 3rem);
+            color: var(--cor-texto);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .iframe-wrapper {
+            width: 100%;
+            max-width: 1200px;
+            height: 75vh;
+            min-height: 500px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--sombra-padrao);
+            background-color: var(--cor-card);
+        }
+
+        .iframe-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div id="header"></div>
+</header>
+
+    <main class="figma-container">
+        <h1>Protótipo Figma</h1>
+        <div class="iframe-wrapper">
+            <!-- Embed do Figma com carregamento preguiçoso para não prejudicar performance inicial -->
+            <iframe 
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2F" 
+                allowfullscreen 
+                loading="lazy"
+                title="Protótipo interativo do Figma"
+            ></iframe>
+        </div>
+    </main>
+
+   <footer>
+    <div id="footer"></div>
+</footer>
+</body>
+</html>

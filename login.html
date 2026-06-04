@@ -16,48 +16,48 @@
 </head>
 
 <body>
+    <header>
     <div id="header"></div>
+</header>
 
-    <div class="container-pai">
+    <main class="container-pai">
+        <h1 class="texto-agende-conosco">AGENDE CONOSCO</h1>
 
-        <div class="texto-agende-conosco">AGENDE CONOSCO</div>
+        <div class="container-filho">
+            <div class="nao-tenho-cadastro">
+                <span class="texto-nao">NÃO TENHO CADASTRO</span>
+                <span class="texto-ja">JÁ TENHO CADASTRO</span>
+            </div>
 
-      <div class="container-filho">
+            <div class="form-wrapper">
+                <div class="texto-sem-contorno">
+                    <span class="se-essa">Se essa é a primeira vez que <br class="hidden-mobile"> você realiza o acesso à <br class="hidden-mobile"> plataforma, clique no botão <br class="hidden-mobile"> ABAIXO.</span>
+                </div>
 
-        <div class="nao-tenho-cadastro">
-            <span class="texto-nao">NÃO TENHO CADASTRO</span>
-            <span class="texto-ja">JÁ TENHO CADASTRO</span>
-        </div>
+                <form class="inputs-container" action="index.html">
+                    <div class="caixa-input">
+                        <label for="cpf">CPF:</label>
+                        <input type="text" id="cpf" name="cpf" placeholder="CPF" required>
+                    </div>
 
-        
+                    <div class="caixa-input">
+                        <label for="senha">SENHA:</label>
+                        <input type="password" id="senha" name="senha" placeholder="SENHA" required>
+                    </div>
+                </form>
+            </div>
 
-        <div class="texto-sem-contorno">
-            <span class="se-essa">Se essa é a primeira vez que <br> você realiza o acesso à <br> plataforma, clique no botão <br> ABAIXO.</span>
-            <div class="caixa-cpf">
-                <label for="cpf">CPF:</label>
-                <input type="text" id="cpf" name="cpf" placeholder="CPF" required>
+            <div class="container-botoes">
+                <a class="botao-acao" href="cadastro.html">CADASTRE-SE</a>
+                <a class="texto-esqueceu-senha" href="esqueceuasenha.html">Esqueceu a senha?</a>
+                <a class="botao-acao" href="index.html">ENTRAR</a>
             </div>
         </div>
+    </main>
 
-        <div class="caixa-senha">
-            <label for="senha">SENHA:</label>
-            <input type="text" id="senha" name="senha" placeholder="SENHA" required>
-      </div>
-
-           <div class="container-botoes">
-              <a class="botao-cadastre-se" href="cadastro.html">CADASTRE-SE</a>
-              <a class="texto-esqueceu-senha" href="esqueceuasenha.html">Esqueceu a senha?</a>
-              <a class="botao-entrar" href="index.html">ENTRAR</a>
-           </div>
-
-      </div>
-      
-
-
-    </div>
-      
-
+    <footer>
     <div id="footer"></div>
+</footer>
 
 </body>
 

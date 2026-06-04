@@ -1,196 +1,141 @@
-* {
-    font-family: "Montserrat", sans-serif;
-  }
-
-body {
-    margin: 0;
-
-}
-
-.lista {
-    background-color: rgb(83, 143, 49, 100);
-    border-bottom-left-radius: 40px;
-    margin-left: -50px;
-    
-
-}
-
-.lista nav {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-
-}
-
-.lista nav a {
-    margin-left: 30px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-family: "Montserrat", sans-serif;
-    text-decoration: none;
-    color: white;
-
-}
-
-.lista nav a:last-child {
-    margin-right: 25px;
-
-}
-
-.lista-e-endereco {
-    display: flex;
-    flex-direction: column;
-}
-
-.enderecos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-}
-
-.enderecos a {
-    padding-left: 50px;
-
-}
-
-.informacao {
-    display: flex;
-    flex-direction: column;
-    flex-direction: column-reverse;
-}
-
-.enderecos2 {
-    display: flex;
-    justify-content: space-around;
-
-}
-
-.texto {
-    width: 450px;
-
-}
-
-/* Container de consultas */
-main {
+/* =========================================
+   CONSULTAS LAYOUT (Mobile First)
+========================================= */
+.main-consultas {
     display: flex;
     justify-content: center;
-    padding: 40px 0;
+    align-items: center;
+    padding: 4rem 1rem;
+    width: 100%;
+    min-height: calc(100vh - 200px);
 }
 
 .container-pai {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: #9BB4AF;
-    padding: 60px;
+    padding: 2rem 1rem;
     border-radius: 35px;
     width: 100%;
-    max-width: 500px;
-    justify-content: center;
+    max-width: 700px;
+    box-sizing: border-box;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
-.container {
+
+@media (min-width: 768px) {
+    .container-pai {
+        padding: 3rem;
+    }
+}
+
+.container-form {
     background-color: #d9d9d9;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    font-family: "Montserrat", sans-serif;
-    padding: 20px;
+    padding: 2rem 1.5rem;
     border-radius: 20px;
     width: 100%;
-    max-width: 470px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+    .container-form {
+        padding: 3rem;
+    }
+}
+
+.container-form h2 {
     text-align: center;
-}
-
-.container h2 {
-    margin-bottom: 20px;
+    margin-bottom: 2rem;
     color: #333;
+    font-family: "Montserrat", sans-serif;
+    font-size: clamp(1.5rem, 3vw, 2rem);
 }
 
-.texto-especialidade {
+form {
     display: flex;
-    flex-direction: row;
-    justify-content: start;
-}
-
-.texto-data {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-}
-
-.texto-medico {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-}
-
-.texto-endereco {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-}
-
-.texto-selecione-seu-convenio {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-}
-
-form label {
-    display: block;
-    margin-top: 10px;
-    color: #333;
-    font-weight: bold;
-}
-
-form input {
+    flex-direction: column;
+    gap: 1.5rem;
     width: 100%;
-    padding: 8px;
-    margin: 5px 0 15px;
-    border-radius: 35.5px;
+}
+
+.caixa-input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.caixa-input label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+    color: #333;
+}
+
+.caixa-input input {
+    height: 44px; /* Acessibilidade Touch */
+    padding: 0 1.5rem;
+    border-radius: 25px;
     border: 1px solid #ccc;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .botoes {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 80px;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
 }
 
-button {
+@media (min-width: 768px) {
+    .botoes {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.botao-primario, .botao-secundario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: white;
     color: black;
-    padding: 10px;
+    padding: 0 1.5rem;
     border: none;
-    border-radius: 20px;
+    border-radius: 25px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 0.95rem;
     font-family: "Montserrat", sans-serif;
-    text-align: center;
     font-weight: bold;
-    height: 40px;
-    width: 70%;
-    float: left;
-    white-space: nowrap;
+    min-height: 44px; /* Acessibilidade Touch */
+    transition: all 0.3s ease;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.botao-2 {
+@media (min-width: 768px) {
+    .botao-primario, .botao-secundario {
+        width: 48%;
+    }
+}
+
+.botao-secundario {
     color: #2fa018;
-    text-align: center;
-    padding-top: 10px;
+    gap: 10px;
+}
+
+.botao-primario:hover, .botao-secundario:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-2px);
 }
 
 .icone-whatsapp {
-    width: 20px; /* Ajuste o tamanho conforme necessário */
-    height: 20px;
-    vertical-align: middle; /* Centraliza verticalmente */
-    padding-bottom: 2px;
-}
-
-button:hover {
-    background-color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
 }

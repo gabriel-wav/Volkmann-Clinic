@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,53 +9,57 @@
     <link rel="stylesheet" href="consultas.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <title>Consultas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Consultas - Clinica Volkmann</title>
 </head>
-
 <body>
-
+    <header>
     <div id="header"></div>
+</header>
 
-    <main>
-        <div class="container-pai">
-            <div class="container">
-                <h2>MARQUE SUA CONSULTA AQUI</h2>
-                <form>
-                    <label class="texto-especialidade" for="especialidade">ESPECIALIDADE</label>
-                    <input type="text" id="especialidade" name="especialidade" placeholder="Digite a especialidade"
-                        required>
-
-                    <label class="texto-data" for="data">DATA</label>
-                    <input type="date" id="data" name="data" required>
-
-                    <label class="texto-medico" for="medico">MÉDICO</label>
-                    <input type="text" id="medico" name="medico" placeholder="Nome do médico" required>
-
-                    <label class="texto-endereco" for="endereco">ENDEREÇO DA CLÍNICA</label>
-                    <input type="text" id="endereco" name="endereco" placeholder="Endereço completo" required>
-
-                    <label class="texto-selecione-seu-convenio" for="selecione-seu-convenio">SELECIONE SEU
-                        CONVÊNIO</label>
-                    <input type="text" id="selecione-seu-convenio" name="selecione-seu-convenio"
-                        placeholder="Selecionar Convênio">
-
-                    <!-- Botões -->
-                    <div class="botoes">
-                        <button type="submit">Confirmar e Marcar</button>
-                        <button class="botao-2" type="button">
-                            <img src="imagens/whatsapp.png" alt="WhatsApp" class="icone-whatsapp">Marcar
-                            consulta</button>
+    <main class="main-consultas">
+        <section class="container-pai">
+            <div class="container-form">
+                <h2>AGENDAR CONSULTA</h2>
+                <form action="index.html">
+                    <div class="caixa-input">
+                        <label for="especialidade">ESPECIALIDADE:</label>
+                        <input type="text" id="especialidade" name="especialidade" required>
                     </div>
 
+                    <div class="caixa-input">
+                        <label for="medico">MÉDICO:</label>
+                        <input type="text" id="medico" name="medico" required>
+                    </div>
+
+                    <div class="caixa-input">
+                        <label for="data">DATA:</label>
+                        <input type="date" id="data" name="data" required>
+                    </div>
+
+                    <div class="caixa-input">
+                        <label for="endereco">ENDEREÇO:</label>
+                        <input type="text" id="endereco" name="endereco" required>
+                    </div>
+
+                    <div class="caixa-input">
+                        <label for="convenio">SELECIONE SEU CONVÊNIO:</label>
+                        <input type="text" id="convenio" name="convenio">
+                    </div>
+
+                    <div class="botoes">
+                        <button type="submit" class="botao-primario">MARCAR CONSULTA</button>
+                        <button type="button" class="botao-secundario">
+                            WHATSAPP <img src="imagens/logo-whatsapp.jpg" alt="Logo WhatsApp" class="icone-whatsapp" loading="lazy">
+                        </button>
+                    </div>
                 </form>
             </div>
-        </div>
+        </section>
     </main>
 
+    <footer>
     <div id="footer"></div>
-
+</footer>
 </body>
-
 </html>

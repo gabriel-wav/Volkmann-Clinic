@@ -1,63 +1,131 @@
-* {
-  font-family: "Montserrat", sans-serif;
+/* =========================================
+   CADASTRO LAYOUT (Mobile First)
+========================================= */
+.container-pai {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 2rem 1rem;
+    background-color: #9BB4AF;
+    border-radius: 30px;
+    box-sizing: border-box;
 }
 
-body {
-  font-family:"Montserrat", sans-serif;
-  background-color: #F9F2E7; /* Bege */
-  margin: 0;
-  padding: 20px;
+@media (min-width: 768px) {
+    .container-pai {
+        padding: 3rem 2rem;
+    }
 }
 
-.container {
-  max-width: 600px;
-  margin: auto;
-  background: #a8c1bd; /* Cor principal */
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 80px;
-  margin-top: 80px;
+.texto-agende-conosco {
+    align-self: flex-start;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
+    margin-bottom: 2rem;
+    padding-left: 5%;
+    color: #000;
 }
 
-h1 {
-  text-align: center;
-  color: black;
-  /*color: #819a95; /* Um tom mais escuro */
+.container-filho {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2rem 1.5rem;
+    background-color: #d9d9d9;
+    border-radius: 30px;
+    box-sizing: border-box;
 }
 
-label {
-  display: block;
-  margin: 10px 0 5px;
-  color: #748d88; /* Outro tom */
+@media (min-width: 768px) {
+    .container-filho {
+        padding: 3rem;
+    }
 }
 
-input[type="text"],
-input[type="date"],
-input[type="email"],
-input[type="tel"],
-textarea {
-  width: 95%;
-  padding: 10px;
-  border: 1px solid #9bb4af; /* Tom intermediário */
-  border-radius: 5px;
+.form-wrapper {
+    width: 100%;
 }
 
-textarea {
-  resize: vertical;
+.inputs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
 }
 
-button {
-  background-color: #8ea7a2; /* Tom suave */
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  display: block;
-  margin: 20px auto;
+.input-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    width: 100%;
 }
 
-button:hover {
-  background-color:#748d88; /* Tom escuro no hover */
+@media (min-width: 768px) {
+    .input-row {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+.caixa-input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.caixa-input label {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+    color: #333;
+}
+
+.caixa-input input {
+    height: 44px; /* Target de Toque (Acessibilidade) */
+    padding: 0 1.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container-botoes {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.botao-acao {
+    background-color: #748D88;
+    color: black;
+    padding: 0 2rem;
+    min-height: 44px;
+    min-width: 160px;
+    width: 100%;
+    border: none;
+    border-radius: 29px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+@media (min-width: 768px) {
+    .botao-acao {
+        width: auto;
+    }
+}
+
+.botao-acao:hover {
+    background-color: #9BB4AF;
 }

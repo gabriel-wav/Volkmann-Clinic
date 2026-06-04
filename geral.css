@@ -1,3 +1,75 @@
+/* =========================================
+   GERAL E VARIÁVEIS (Mobile First)
+========================================= */
+
+:root {
+    /* Paleta de Cores */
+    --cor-primaria: #9BB4AF;
+    --cor-secundaria: #748D88;
+    --cor-destaque: #798F31;
+    --cor-fundo: #F9F2E7;
+    --cor-card: #d9d9d9;
+    --cor-texto: #333333;
+    --cor-texto-claro: #555555;
+    --cor-branco: #ffffff;
+    
+    /* Tipografia */
+    --fonte-principal: "Montserrat", sans-serif;
+    
+    /* Sombras e Efeitos */
+    --sombra-padrao: 0 4px 15px rgba(0, 0, 0, 0.05);
+    --sombra-hover: 0 8px 25px rgba(0, 0, 0, 0.15);
+    --transicao-padrao: all 0.3s ease;
+}
+
+/* Reset Global */
 * {
-    font-family: "Montserrat", sans-serif;
-  }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+    background-color: var(--cor-fundo);
+    font-family: var(--fonte-principal);
+    color: var(--cor-texto);
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transicao-padrao);
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+}
+
+/* Classes Utilitárias (Acessibilidade) */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.focus-visivel:focus-visible {
+    outline: 3px solid var(--cor-destaque);
+    outline-offset: 2px;
+}

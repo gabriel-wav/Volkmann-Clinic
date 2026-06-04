@@ -1,132 +1,198 @@
+/* =========================================
+   QUEM SOMOS LAYOUT (Mobile First)
+========================================= */
 * {
-    font-family: "Montserrat", sans-serif;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
 
+body {
+  background-color: #F9F2E7;
+}
+
+/* --- FAIXA 1 --- */
+.faixa1 {
+  background-color: #9BB4AF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+  gap: 2rem;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
   .faixa1 {
-    background-color: #9BB4AF;
-    margin: 0%;
     flex-direction: row;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
+    padding: 5rem 10%;
   }
-  
-  .faixa2 {
-    background-color: #F9F2E7;
-    margin: 0%;
-    flex-direction: row;
-    display: flex;
-    align-items: center
-  }
-
-  .faixa3 {
-    background-color: #798F31;
-    margin: 0%;
-    display: flex;
-    text-align: right;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row-reverse;
-    padding: 20px;
 }
 
+.texto-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 650px;
+  text-align: center;
+}
 
-  .titulofaixa1 {
-    padding: 0px 0px 0px 50px;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: nowrap;
-    white-space: nowrap;
-    margin-top: 5%;
-    font-weight: bold;
-    font-size: xx-large;
-  }
-  
-  .textofaixa1 {
-    margin-left: -230px; 
-    margin-top: 10%;
-    padding: 100px 0px 0 0px;
+@media (min-width: 1024px) {
+  .texto-container {
     text-align: left;
-    justify-content: flex-start;
-    font-weight: 500;
-    font-size: x-large;
-   
   }
-
-  .imgfaixa1 {
-    margin: 100px;
-    text-align: right;
-    justify-content: flex-end;
-    border-radius: 70px;
-  }
-
-  .container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
 }
-.section {
-    padding: 20px;
-    margin-bottom: 20px;
-    
+
+.titulofaixa1 {
+  font-weight: bold;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  margin-bottom: 1.5rem;
+  color: #111;
 }
+
+.textofaixa1 {
+  font-weight: 500;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  line-height: 1.6;
+  color: #222;
+}
+
+.imgfaixa1 {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 40px;
+  object-fit: cover;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* --- FAIXA 2 --- */
+.faixa2 {
+  background-color: #F9F2E7;
+  padding: 4rem 1.5rem;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .section-title {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    
+  text-align: center;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  font-weight: bold;
+  margin-bottom: 3rem;
+  color: #333;
 }
+
 .ideals {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #F9F2E7;
-    
+  background-color: #fff;
+  padding: 2rem 1rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
+
+@media (min-width: 768px) {
+  .ideals {
+    padding: 3rem;
+  }
+}
+
 .ideals-content {
-    display: flex;
-    justify-content: space-around;
-    gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .ideals-content {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .ideal {
-    background-color: #e0e0e0;
-    padding: 20px;
-    border-radius: 10px;
-    width: 30%;
-    text-align: center;
+  background-color: #f4f4f4;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.3s ease;
 }
+
+.ideal:hover {
+  transform: translateY(-5px);
+}
+
 .ideal-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #2fa018;
+}
+
+.ideal-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  flex-grow: 1;
+}
+
+/* --- FAIXA 3 --- */
+.faixa3 {
+  background-color: #798F31;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1.5rem;
+  gap: 3rem;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .faixa3 {
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding: 6rem 10%;
+  }
 }
 
 .imgfaixa3 {
+  width: 100%;
+  max-width: 450px;
   border-radius: 30px;
-  width: 450px;
   height: auto;
+  object-fit: cover;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
 }
 
 .texto-faixa3 {
-  max-width: 500px;
-  color: #2B2B2B;
+  max-width: 600px;
+  color: #fff;
+  text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .texto-faixa3 {
+    text-align: right;
+  }
 }
 
 .titulofaixa3 {
-  font-size: 2em;
+  font-size: clamp(2rem, 4vw, 3rem);
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
+  color: #fff;
 }
 
 .textofaixa3 {
-  font-size: 1.2em;
+  font-size: clamp(1rem, 2vw, 1.25rem);
   line-height: 1.6;
+  color: #f0f0f0;
 }
-
-
-
-
-
-  

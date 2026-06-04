@@ -1,63 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ficha de Cadastro - Clínica Volkmann</title>
-    <script src="script.js" defer></script>
-    <script src="header.js" defer></script>
-    <link rel="stylesheet" href="cadastro.css">
-    <link rel="stylesheet" href="style.css">
     <script src="footer.js" defer></script>
     <script src="header.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cadastro.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Cadastro - Clinica Volkmann</title>
 </head>
-
 <body>
-
+    <header>
     <div id="header"></div>
+</header>
 
-    <div class="container">
-        <h1>Faça aqui o seu Cadastro</h1>
-        <form>
-            <label for="nome">Nome Completo:</label>
-            <input type="text" id="nome" name="nome" required>
+    <main class="container-pai">
+        <h1 class="texto-agende-conosco">CADASTRAR</h1>
 
-            <label for="data-nascimento">Data de Nascimento:</label>
-            <input type="date" id="data-nascimento" name="data-nascimento" required>
+        <div class="container-filho">
+            <div class="form-wrapper">
+                <form class="inputs-container" action="login.html">
+                    <div class="input-row">
+                        <div class="caixa-input">
+                            <label for="nome">NOME COMPLETO:</label>
+                            <input type="text" id="nome" name="nome" placeholder="NOME" required>
+                        </div>
+                    </div>
+                    
+                    <div class="input-row">
+                        <div class="caixa-input">
+                            <label for="cpf">CPF:</label>
+                            <input type="text" id="cpf" name="cpf" placeholder="CPF" required>
+                        </div>
+                        <div class="caixa-input">
+                            <label for="datanascimento">DATA DE NASCIMENTO:</label>
+                            <input type="date" id="datanascimento" name="datanascimento" required>
+                        </div>
+                    </div>
 
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
+                    <div class="input-row">
+                        <div class="caixa-input">
+                            <label for="email">E-MAIL:</label>
+                            <input type="email" id="email" name="email" placeholder="E-MAIL" required>
+                        </div>
+                        <div class="caixa-input">
+                            <label for="celular">NÚMERO DE CELULAR:</label>
+                            <input type="tel" id="celular" name="celular" placeholder="(DD) 9XXXX-XXXX" required>
+                        </div>
+                    </div>
 
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone" required>
+                    <div class="input-row">
+                        <div class="caixa-input">
+                            <label for="senha">CRIE SUA SENHA:</label>
+                            <input type="password" id="senha" name="senha" placeholder="SENHA" required>
+                        </div>
+                        <div class="caixa-input">
+                            <label for="confirmesenha">CONFIRME SUA SENHA:</label>
+                            <input type="password" id="confirmesenha" name="confirmesenha" placeholder="CONFIRME A SENHA" required>
+                        </div>
+                    </div>
 
-            <label for="endereco">Endereço:</label>
-            <textarea id="endereco" name="endereco" required></textarea>
+                    <div class="container-botoes">
+                        <button type="submit" class="botao-acao">CONCLUIR</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
 
-            <label for="convenio">Selecione seu Convênio ou Consulta Particular:</label>
-            <select id="convenio" name="convenio" required>
-                <option value="">convênio ou Particular</option>
-                <option value="particular">Particular</option>
-                <option value="unimed">Unimed</option>
-                <option value="bradesco">Bradesco Saúde</option>
-                <option value="amil">Amil</option>
-                <option value="notredame">NotreDame Intermédica</option>
-                <option value="hapvida">Hapvida</option>
-            </select>
-
-            <label for="observacoes">Observações:</label>
-            <textarea id="observacoes" name="observacoes"></textarea>
-
-            <button type="submit">Cadastrar</button>
-        </form>
-    </div>
+    <footer>
+    <div id="footer"></div>
+</footer>
 </body>
-
-<div id="footer"></div>
-
 </html>

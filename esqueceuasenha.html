@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="footer.js" defer></script>
+    <script src="header.js" defer></script>
+    <link rel="stylesheet" href="geral.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Recuperar Senha - Clinica Volkmann</title>
+</head>
+<body>
+    <header>
+    <div id="header"></div>
+</header>
+
+    <main class="container-pai">
+        <h1 class="texto-agende-conosco">RECUPERAR SENHA</h1>
+
+        <div class="container-filho">
+            <div class="form-wrapper" style="flex-direction: column; align-items: center; text-align: center;">
+                <p style="font-family: 'Montserrat', sans-serif; margin-bottom: 2rem; color: #333; line-height: 1.5;">
+                    Informe o seu CPF cadastrado. <br> Enviaremos um link de recuperação para o seu e-mail.
+                </p>
+                
+                <form class="inputs-container" action="login.html" style="width: 100%; max-width: 400px; padding: 0;">
+                    <div class="caixa-input">
+                        <label for="cpf" style="text-align: left;">CPF:</label>
+                        <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" required>
+                    </div>
+
+                    <div class="container-botoes" style="flex-direction: column; gap: 1rem; justify-content: center; margin-top: 2rem;">
+                        <button type="submit" class="botao-acao" style="width: 100%;">ENVIAR LINK</button>
+                        <a href="login.html" class="texto-esqueceu-senha" style="margin-top: 1rem; width: 100%;">Voltar para o Login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+   <footer>
+    <div id="footer"></div>
+</footer>
+</body>
+</html>
