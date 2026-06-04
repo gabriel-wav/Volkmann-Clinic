@@ -2,8 +2,6 @@
 
 This repository contains the source code for a static website for "Volkmann Clinic", a fictional orthopedic center. The project was developed as a pure front-end application, using HTML, CSS and JavaScript to create an interactive and informative user experience.
 
-**[Access the live demo (via GitHub Pages)](https://gabriel-wav.github.io/ClinicaVolkmann/index.html)**
-
 ---
 
 ## 📋 Table of Contents
